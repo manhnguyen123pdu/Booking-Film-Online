@@ -1,0 +1,479 @@
+{
+  "films": [
+    {
+      "id": "film_6GKrddfeZRGdgzG5v6Jt",
+      "nameFilm": "VÙNG ĐẤT CÂM LẶNG: NGÀY MỘT",
+      "videoTrailer": "https://youtu.be/9wVj8AxpT8A?si=0IcR_TnIFyrSAPLZ",
+      "release": "5/4",
+      "img": [
+        "https://image.lag.vn/upload/news/21/05/07/3730673B-9C27-4F39-98F1-8DDB361D8D32_XOVG.jpeg"
+      ],
+      "subImg": [
+        "https://i.ytimg.com/vi/OjRmRyWyiZM/hqdefault.jpg",
+        "https://i.ytimg.com/vi/SQYHY5HzRL0/maxresdefault.jpg",
+        "https://i.ytimg.com/vi/0hLoZ20qTM8/maxresdefault.jpg"
+      ],
+      "ratedView": {
+        "imdb": "6.4",
+        "user": "7.9"
+      },
+      "infoFilm": {
+        "rating": "T16 - PHIM ĐƯỢC PHỔ BIẾN ĐẾN NGƯỜI XEM TỪ ĐỦ 16 TUỔI TRỞ LÊN (16+)",
+        "releaseDate": "Tháng 2, 2024",
+        "status": false,
+        "cast": [
+          {
+            "img": "https://nguoinoitieng.tv/images/nnt/67/0/api5.jpg",
+            "name": "Joseph Quinn",
+            "role": "Alexara"
+          },
+          {
+            "role": "Lufy",
+            "name": "Alex Wolff",
+            "img": "https://nguoinoitieng.tv/images/nnt/68/0/aqa1.jpg"
+          }
+        ],
+        "director": "Michael Sarnoski",
+        "story": "hay",
+        "country": "Âu Mỹ",
+        "time": "101 phút",
+        "category": [
+          "Kinh Dị",
+          "Phiêu lưu"
+        ]
+      }
+    },
+    {
+      "id": "film_KTk7n1YdYiW2ZxoVe4F8",
+      "nameFilm": "EXHUMA: QUẬT MỘ TRÙNG MA",
+      "videoTrailer": "https://youtu.be/7LH-TIcPqks?si=8Syl1QVPYLmRWGuc",
+      "release": "25/3",
+      "img": [
+        "https://iguov8nhvyobj.vcdn.cloud/media/catalog/product/cache/1/image/c5f0a1eff4c394a251036189ccddaacd/r/s/rsz_700x1000_2.jpg"
+      ],
+      "subImg": [
+        "https://iguov8nhvyobj.vcdn.cloud/media/catalog/product/cache/1/image/1800x/71252117777b696995f01934522c402d/6/4/640x396-q-m.jpg",
+        "https://i.ytimg.com/vi/cPad6xY3cr4/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGHIgQyg1MA8=&rs=AOn4CLDD0fK2kJR75dVvF9WrPwSdH4v75A",
+        "https://mephim.uk/storage/images/exhuma-quat-mo-trung-ma/exhuma-quat-mo-trung-ma-poster.webp"
+      ],
+      "ratedView": {
+        "imdb": "6.9",
+        "user": "5.9"
+      },
+      "infoFilm": {
+        "rating": "T16 - PHIM ĐƯỢC PHỔ BIẾN ĐẾN NGƯỜI XEM TỪ ĐỦ 16 TUỔI TRỞ LÊN (16+)",
+        "releaseDate": "Tháng 2, 2024",
+        "status": false,
+        "cast": [
+          {
+            "role": "Huyn Jang",
+            "img": "https://cdn.galaxycine.vn/media/2024/2/7/choi-min-sik-1_1707294246729.jpg",
+            "name": "Choi Min Sik"
+          },
+          {
+            "name": "Lee Do Hyun",
+            "role": "Sin Huyk",
+            "img": "https://upload.wikimedia.org/wikipedia/commons/9/98/230315_Lee_Do-hyun_%28%EC%9D%B4%EB%8F%84%ED%98%84%29.jpg"
+          },
+          {
+            "role": "Jin Ha",
+            "img": "https://cdn.galaxycine.vn/media/2022/10/12/19081720_1665593329943.jpg",
+            "name": "Yoo Hai Jin"
+          },
+          {
+            "img": "https://i.mydramalist.com/v0Exg_5c.jpg",
+            "name": "Kim Go Eun",
+            "role": "Ae Ra"
+          }
+        ],
+        "director": "Jang Jae Hyun",
+        "story": "Hai pháp sư, một thầy phong thuỷ và một chuyên gia khâm liệm cùng hợp lực khai quật ngôi mộ bị nguyền rủa của một gia đình giàu có, nhằm cứu lấy sinh mạng hậu duệ cuối cùng trong dòng tộc. Bí mật hắc ám của tổ tiên được đánh thức.",
+        "country": "Hàn Quốc",
+        "time": "101 phút",
+        "category": [
+          "Kinh Dị"
+        ]
+      }
+    },
+    {
+      "id": "film_LRF2Bi2kqZET8JXXM02X",
+      "nameFilm": "BIỆT ĐỘI SĂN RỒNG",
+      "videoTrailer": "https://youtu.be/EuYDJ2Csq7I?si=hLfhOn4cHcAxA2ki",
+      "release": "8/4",
+      "img": [
+        "https://cinestar.com.vn/pictures/Cinestar/02-2024/biet-doi-san-rong.jpg"
+      ],
+      "subImg": [
+        "https://iguov8nhvyobj.vcdn.cloud/media/catalog/product/cache/1/image/1800x/71252117777b696995f01934522c402d/1/9/1920x1080-sanrong.jpg",
+        "https://wnyxvn3171.expandcart.com/ecdata/stores/WNYXVN3171/image/data/products/1708360889_Bi%E1%BB%87t_%C4%90%E1%BB%99i_S%C4%83n_R%E1%BB%93ng_3.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmIQxAZo0HGPho9oSZnZuR3wDozINjfl_uNx3vgjgAuwdBgpXuyC7h8RZWbR16fSxShUw&usqp=CAU"
+      ],
+      "ratedView": {
+        "imdb": "6.8",
+        "user": "8.3"
+      },
+      "infoFilm": {
+        "rating": "T16 - PHIM ĐƯỢC PHỔ BIẾN ĐẾN NGƯỜI XEM TỪ ĐỦ 16 TUỔI TRỞ LÊN (16+)",
+        "releaseDate": "Tháng 2, 2024",
+        "status": false,
+        "cast": [
+          {
+            "role": "Wright",
+            "img": "https://i.pinimg.com/736x/3e/5d/eb/3e5deb282a0e1f746c23cfbf501ecf7e.jpg",
+            "name": "Ishikawa Plowden"
+          },
+          {
+            "img": "https://i.pinimg.com/736x/4e/c0/19/4ec019c7d0e46dfeeee42c7eb265d813.jpg",
+            "name": "Mookda Narinrak",
+            "role": "Kang"
+          }
+        ],
+        "director": "Panjapong Kongkanoy, Supawit Suwannet",
+        "story": "Sau khi một trận cháy rừng chết chóc quét qua trái đất và khiến không khí tràn ngập chất ô nhiễm, xã hội đang trên bờ vực sụp đổ và tràn ngập bệnh tật. Hy vọng duy nhất dường như nằm ở một truyền thuyết: đó là Slyth, một loài bò sát có thể cải trang thành con người và sở hữu dòng máu có thể chữa khỏi bệnh tật. Cuộc săn bắn bắt đầu.",
+        "country": "Thái Lan",
+        "time": "101 phút",
+        "category": [
+          "Hành Động",
+          "Phiêu Lưu",
+          "Tâm Lý"
+        ]
+      }
+    },
+    {
+      "id": "film_s99tv72whcc",
+      "nameFilm": "CHỊ NGÃ EM NÂNG",
+      "videoTrailer": "https://youtu.be/gGaiJAaEruQ?si=rsPr1J138DDmOK3f",
+      "release": "5/4",
+      "img": [
+        "https://iguov8nhvyobj.vcdn.cloud/media/catalog/product/cache/1/image/c5f0a1eff4c394a251036189ccddaacd/c/n/cnen-mainposter-1.jpg"
+      ],
+      "subImg": [
+        ""
+      ],
+      "ratedView": {
+        "imdb": "6",
+        "user": "4"
+      },
+      "infoFilm": {
+        "rating": "P",
+        "releaseDate": "2025-10-15",
+        "status": false,
+        "cast": [],
+        "director": "Vũ Thành Vinh",
+        "story": "Chị Ngã Em Nâng là câu chuyện cảm động xoay quanh hai chị em Thương và Lực – lớn lên trong một gia đình gắn bó với nghề làm nhang truyền thống. Biến cố xảy ra từ sớm khiến Thương trở thành chỗ dựa duy nhất cho em trai, vừa làm chị, vừa gánh vai trò của cha mẹ. Lớn lên trong điều kiện không đủ đầy, nhưng với bản lĩnh cùng những lời dạy ăn sâu vào tâm thức mà cha mẹ dành cho Thương, cô đã kiên trì đầy nghị lực để quyết tâm thay đổi cuộc sống. Thương thành công và kỳ vọng em trai đi theo con đường mình đã lựa chọn. Tuy nhiên, sự áp đặt vô tình tạo nên rạn nứt, đẩy hai chị em vào những mâu thuẫn sâu sắc – thậm chí đến mức đối mặt sinh tử.",
+        "country": "Âu Mỹ",
+        "time": "120 phút",
+        "category": [
+          "Tình cảm"
+        ]
+      }
+    }
+  ],
+  "showtimes": [
+    {
+      "filmId": "film_6GKrddfeZRGdgzG5v6Jt",
+      "cinemaId": "cinema_default",
+      "roomId": "room_2",
+      "datetime": "2024-08-02T22:00:00Z",
+      "price": 60000,
+      "discount": 0,
+      "format": "2D",
+      "language": "Phụ đề Việt",
+      "availableSeats": 80,
+      "totalSeats": 120,
+      "id": "showtime_TB22_20240804_1500"
+    },
+    {
+      "id": "showtime_ME15_20240813_1500",
+      "filmId": "film_KTk7n1YdYiW2ZxoVe4F8",
+      "cinemaId": "cinema_default",
+      "roomId": "room_5",
+      "datetime": "2024-08-13T15:00:00Z",
+      "price": 60000,
+      "discount": 0,
+      "format": "2D",
+      "language": "Phụ đề Việt",
+      "availableSeats": 80,
+      "totalSeats": 120
+    },
+    {
+      "id": "showtime_TE15_20240814_1500",
+      "filmId": "film_KTk7n1YdYiW2ZxoVe4F8",
+      "cinemaId": "cinema_default",
+      "roomId": "room_5",
+      "datetime": "2024-08-14T15:00:00Z",
+      "price": 60000,
+      "discount": 10,
+      "format": "2D",
+      "language": "Phụ đề Việt",
+      "availableSeats": 80,
+      "totalSeats": 120
+    },
+    {
+      "id": "showtime_MD15_20240813_1500",
+      "filmId": "film_LRF2Bi2kqZET8JXXM02X",
+      "cinemaId": "cinema_default",
+      "roomId": "room_4",
+      "datetime": "2024-08-13T15:00:00Z",
+      "price": 65000,
+      "discount": 0,
+      "format": "2D",
+      "language": "Phụ đề Việt",
+      "availableSeats": 80,
+      "totalSeats": 120
+    },
+    {
+      "id": "showtime_TD15_20240814_1500",
+      "filmId": "film_LRF2Bi2kqZET8JXXM02X",
+      "cinemaId": "cinema_default",
+      "roomId": "room_4",
+      "datetime": "2024-08-14T15:00:00Z",
+      "price": 65000,
+      "discount": 10,
+      "format": "2D",
+      "language": "Phụ đề Việt",
+      "availableSeats": 80,
+      "totalSeats": 120
+    },
+    {
+      "id": "showtime_film_6GKrddfeZRGdgzG5v6Jt_20200908_2105",
+      "filmId": "film_6GKrddfeZRGdgzG5v6Jt",
+      "cinemaId": "cinema_default",
+      "roomId": "room_2",
+      "datetime": "2020-09-08T21:05:00Z",
+      "price": 32,
+      "discount": 93,
+      "format": "3D",
+      "language": "Lồng tiếng Việt",
+      "availableSeats": 72,
+      "totalSeats": 48
+    },
+    {
+      "id": "showtime_film_6GKrddfeZRGdgzG5v6Jt_20210204_2151",
+      "filmId": "film_6GKrddfeZRGdgzG5v6Jt",
+      "cinemaId": "cinema_default",
+      "roomId": "room_1",
+      "datetime": "2021-02-04T21:51:00Z",
+      "price": 66,
+      "discount": 65,
+      "format": "IMAX",
+      "language": "Phụ đề Việt",
+      "availableSeats": 6,
+      "totalSeats": 80
+    },
+    {
+      "id": "showtime_film_6GKrddfeZRGdgzG5v6Jt_20250805_0649",
+      "filmId": "film_6GKrddfeZRGdgzG5v6Jt",
+      "cinemaId": "cinema_default",
+      "roomId": "room_1",
+      "datetime": "2025-08-05T06:49:00Z",
+      "price": 11,
+      "discount": 81,
+      "format": "IMAX",
+      "language": "Phụ đề Việt",
+      "availableSeats": 44,
+      "totalSeats": 82
+    },
+    {
+      "id": "showtime_film_s99tv72whcc_20251025_1157",
+      "filmId": "film_s99tv72whcc",
+      "cinemaId": "cinema_default",
+      "roomId": "room_1",
+      "datetime": "2025-10-25T11:57:00Z",
+      "price": 70000,
+      "discount": 0,
+      "format": "2D",
+      "language": "Phụ đề Việt",
+      "availableSeats": 120,
+      "totalSeats": 120
+    },
+    {
+      "id": "showtime_film_s99tv72whcc_20251014_2158",
+      "filmId": "film_s99tv72whcc",
+      "cinemaId": "cinema_default",
+      "roomId": "room_1",
+      "datetime": "2025-10-14T21:58:00Z",
+      "price": 120000,
+      "discount": 0,
+      "format": "2D",
+      "language": "Phụ đề Việt",
+      "availableSeats": 120,
+      "totalSeats": 120
+    }
+  ],
+  "cinemas": [
+    {
+      "id": "cinema_default",
+      "name": "Rạp Chiếu Phim Mặc Định",
+      "address": "Số 1, Đường ABC, Quận 1, TP.HCM",
+      "phone": "0123 456 789",
+      "amenities": [
+        "Parking",
+        "Food Court",
+        "3D"
+      ],
+      "rooms": [
+        "room_1",
+        "room_2",
+        "room_3",
+        "room_4",
+        "room_5"
+      ]
+    }
+  ],
+  "rooms": [
+    {
+      "id": "room_2",
+      "cinemaId": "cinema_default",
+      "name": "Phòng 2",
+      "type": "Standard",
+      "capacity": 120,
+      "features": [
+        "2D",
+        "Dolby Sound"
+      ]
+    },
+    {
+      "id": "room_4",
+      "cinemaId": "cinema_default",
+      "name": "Phòng 4",
+      "type": "Standard",
+      "capacity": 120,
+      "features": [
+        "2D",
+        "Dolby Sound"
+      ]
+    },
+    {
+      "id": "room_5",
+      "cinemaId": "cinema_default",
+      "name": "Phòng 5",
+      "type": "Standard",
+      "capacity": 120,
+      "features": [
+        "2D",
+        "Dolby Sound"
+      ]
+    }
+  ],
+  "bookings": [
+    {
+      "id": "43e2",
+      "showtimeId": "showtime_film_s99tv72whcc_20251025_1157",
+      "filmId": "film_s99tv72whcc",
+      "filmName": "CHỊ NGÃ EM NÂNG",
+      "cinemaId": "cinema_default",
+      "roomId": "room_1",
+      "datetime": "2025-10-25T11:57:00Z",
+      "seats": [
+        "A1",
+        "A2",
+        "A3",
+        "A4",
+        "A5"
+      ],
+      "totalAmount": 425000,
+      "status": "confirmed",
+      "customerInfo": {
+        "fullName": "Nguyễn Văn Minh",
+        "email": "user@example.com",
+        "phone": "0123456789",
+        "paymentMethod": "cash",
+        "userId": "user_1"
+      },
+      "userId": "user_1",
+      "paymentMethod": "cash",
+      "paymentStatus": "paid",
+      "createdAt": "2025-10-12T15:09:00.980Z"
+    },
+    {
+      "id": "d103",
+      "showtimeId": "showtime_film_s99tv72whcc_20251025_1157",
+      "filmId": "film_s99tv72whcc",
+      "filmName": "CHỊ NGÃ EM NÂNG",
+      "cinemaId": "cinema_default",
+      "roomId": "room_1",
+      "datetime": "2025-10-25T11:57:00Z",
+      "seats": [
+        "G5",
+        "G11",
+        "G10"
+      ],
+      "totalAmount": 360000,
+      "status": "confirmed",
+      "customerInfo": {
+        "fullName": "Nguyễn Văn Minh",
+        "email": "user@example.com",
+        "phone": "0123456789",
+        "paymentMethod": "zalopay",
+        "userId": "user_1"
+      },
+      "userId": "user_1",
+      "paymentMethod": "zalopay",
+      "paymentStatus": "paid",
+      "createdAt": "2025-10-12T15:09:33.670Z"
+    },
+    {
+      "id": "2d5f",
+      "showtimeId": "showtime_film_6GKrddfeZRGdgzG5v6Jt_20250805_0649",
+      "filmId": "film_6GKrddfeZRGdgzG5v6Jt",
+      "filmName": "VÙNG ĐẤT CÂM LẶNG: NGÀY MỘT",
+      "cinemaId": "cinema_default",
+      "roomId": "room_1",
+      "datetime": "2025-08-05T06:49:00Z",
+      "seats": [
+        "E8",
+        "E9"
+      ],
+      "totalAmount": 130000,
+      "status": "confirmed",
+      "customerInfo": {
+        "fullName": "Nguyễn Văn Minh",
+        "email": "user@example.com",
+        "phone": "0123456789",
+        "paymentMethod": "momo",
+        "userId": "user_1"
+      },
+      "userId": "user_1",
+      "paymentMethod": "momo",
+      "paymentStatus": "paid",
+      "createdAt": "2025-10-12T15:09:47.688Z"
+    }
+  ],
+  "users": [
+    {
+      "id": "user_1",
+      "fullName": "Nguyễn Văn A",
+      "email": "user@example.com",
+      "password": "123456",
+      "phone": "0123456789",
+      "createdAt": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": "user_2",
+      "fullName": "Trần Thị B",
+      "email": "user2@example.com",
+      "password": "123456",
+      "phone": "0987654321",
+      "createdAt": "2024-01-02T00:00:00Z"
+    },
+    {
+      "id": "user_3",
+      "fullName": "Lê Văn C",
+      "email": "user3@example.com",
+      "password": "123456",
+      "phone": "0369852147",
+      "createdAt": "2024-01-03T00:00:00Z"
+    },
+    {
+      "id": "1760282647393",
+      "fullName": "Bradley May",
+      "email": "use3r@example.com",
+      "phone": "0123456789",
+      "password": "123456",
+      "dateOfBirth": "",
+      "gender": "",
+      "createdAt": "2025-10-12T15:24:07.393Z"
+    }
+  ]
+}

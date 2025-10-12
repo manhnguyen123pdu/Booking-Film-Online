@@ -1,0 +1,548 @@
+/* ShowtimePage.css */
+.showtime-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%);
+  color: white;
+  padding: 2rem 0;
+}
+
+/* Loading Screen */
+.loading-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #0f0f0f;
+  color: white;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 3px solid #333;
+  border-top: 3px solid #e50914;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 1rem;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.error-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #0f0f0f;
+  color: white;
+  text-align: center;
+}
+
+.back-home-btn {
+  padding: 1rem 2rem;
+  background: #e50914;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+/* Header */
+.showtime-header {
+  max-width: 1200px;
+  margin: 0 auto 3rem;
+  padding: 0 2rem;
+}
+
+.back-btn {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.back-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+.showtime-header .header-content{
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding: 0;
+}
+.header-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  background: linear-gradient(135deg, #fff 0%, #ccc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
+.movie-info {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.movie-poster {
+  width: 120px;
+  height: 180px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.movie-details h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.movie-meta {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.rating-badge {
+  padding: 0.4rem 0.8rem;
+  border-radius: 15px;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.rating-badge.imdb {
+  background: #f5c518;
+  color: #000;
+}
+
+.rating-badge.user {
+  background: #e50914;
+  color: white;
+}
+
+.duration {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 0.4rem 0.8rem;
+  border-radius: 15px;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.film-genres {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.genre-tag {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.4rem 0.8rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Content */
+.showtime-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Filters */
+.showtime-content .filters-section {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem ;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 3rem;
+}
+
+.date-filter,
+.cinema-filter {
+  margin-bottom: 2rem;
+}
+
+.date-filter:last-child,
+.cinema-filter:last-child {
+  margin-bottom: 0;
+}
+
+.filters-section h3 {
+  margin-bottom: 1rem;
+  color: #ccc;
+  font-size: 1.1rem;
+}
+
+.date-buttons,
+.cinema-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.date-btn,
+.cinema-btn {
+  padding: 0.8rem 1.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.cinema-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.date-btn:hover,
+.cinema-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+.date-btn.active,
+.cinema-btn.active {
+  background: #e50914;
+  border-color: #e50914;
+  transform: translateY(-2px);
+}
+
+.cinema-btn.active {
+  background: var(--cinema-color);
+  border-color: var(--cinema-color);
+}
+
+.cinema-icon {
+  font-size: 1.1rem;
+}
+
+/* Showtimes Grid */
+.cinema-section {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 2rem;
+}
+
+.cinema-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.cinema-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cinema-info h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.3rem;
+}
+
+.cinema-address {
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.cinema-features {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.feature-tag {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.3rem 0.6rem;
+  border-radius: 12px;
+  font-size: 0.7rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Showtime Cards */
+.showtime-slots {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.showtime-card {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  padding: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.showtime-card .time-section{
+  display: flex;
+  align-items: center;
+}
+
+.showtime-card:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: #e50914;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(229, 9, 20, 0.2);
+}
+
+.time-section {
+  text-align: center;
+  min-width: 80px;
+}
+
+.showtime-time {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 0.2rem;
+}
+
+.showtime-end {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.room-section {
+  flex: 1;
+}
+
+.room-name {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  color: white;
+}
+
+.room-type {
+  font-size: 0.8rem;
+  color: #888;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.2rem 0.5rem;
+  border-radius: 8px;
+}
+
+.price-section {
+  text-align: right;
+}
+
+.discount-price {
+  position: relative;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #888;
+  font-size: 0.8rem;
+  display: block;
+}
+
+.final-price {
+  color: #e50914;
+  font-weight: bold;
+  font-size: 1.1rem;
+  display: block;
+}
+
+.normal-price {
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.discount-badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: #e50914;
+  color: white;
+  padding: 0.2rem 0.6rem;
+  border-radius: 10px;
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+
+.select-btn {
+  background: #e50914;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.select-btn:hover {
+  background: #b8070f;
+  transform: scale(1.05);
+}
+
+/* No Showtimes */
+.no-showtimes {
+  text-align: center;
+  padding: 4rem 2rem;
+  color: #888;
+}
+
+.no-showtimes-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  opacity: 0.5;
+}
+
+.no-showtimes h3 {
+  margin-bottom: 1rem;
+  color: #ccc;
+}
+
+.change-date-btn {
+  background: #e50914;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+/* Quick Tips */
+.quick-tips {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 3rem;
+}
+
+.quick-tips h3 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: white;
+}
+
+.tips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.tip-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.tip-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.tip-card strong {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.tip-card p {
+  color: #ccc;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .showtime-page {
+    padding: 1rem 0;
+  }
+  
+  .showtime-header,
+  .showtime-content {
+    padding: 0 1rem;
+  }
+  
+  .header-content h1 {
+    font-size: 2rem;
+  }
+  
+  .movie-info {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .movie-meta {
+    justify-content: center;
+  }
+  
+  .date-buttons,
+  .cinema-buttons {
+    gap: 0.5rem;
+  }
+  
+  .date-btn,
+  .cinema-btn {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .cinema-header {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .showtime-slots {
+    grid-template-columns: 1fr;
+  }
+  
+  .showtime-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+  
+  .tips-grid {
+    grid-template-columns: 1fr;
+  }
+}

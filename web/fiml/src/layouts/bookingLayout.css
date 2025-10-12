@@ -1,0 +1,33 @@
+
+.header1 {
+  background: #131313;
+  background-image: url(https://demo.ovatheme.com/aovis/wp-content/uploads/2023/03/background-camera-about-about-page.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  padding: 60px;
+  text-align: center;
+}
+
+.header h1 {
+  margin-bottom: 15px;
+  font-size: 2rem;
+}
+
+.booking-progress {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.step {
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.step.active {
+  background: #ff6b6b;
+}

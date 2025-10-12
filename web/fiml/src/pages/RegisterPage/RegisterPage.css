@@ -1,0 +1,75 @@
+
+/* Field Error Styles */
+.field-error {
+  color: #fecaca;
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-top: 0.3rem;
+  display: block;
+}
+
+.form-group input.error {
+  border-color: #fecaca;
+  background: rgba(254, 202, 202, 0.1);
+}
+
+.form-group input.error:focus {
+  border-color: #fecaca;
+  box-shadow: 0 0 0 4px rgba(254, 202, 202, 0.1);
+}
+
+/* Password Strength Indicator */
+.password-strength {
+  margin-top: 0.5rem;
+  height: 4px;
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.2);
+  overflow: hidden;
+}
+
+.strength-bar {
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.strength-weak {
+  background: #ff6b6b;
+  width: 33%;
+}
+
+.strength-medium {
+  background: #ffd93d;
+  width: 66%;
+}
+
+.strength-strong {
+  background: #00ff88;
+  width: 100%;
+}
+
+/* Terms Checkbox */
+.terms-group {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+  margin: 1rem 0;
+}
+
+.terms-group input[type="checkbox"] {
+  margin-top: 0.2rem;
+}
+
+.terms-group label {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.4;
+}
+
+.terms-group a {
+  color: #ffd93d;
+  text-decoration: none;
+}
+
+.terms-group a:hover {
+  text-decoration: underline;
+}

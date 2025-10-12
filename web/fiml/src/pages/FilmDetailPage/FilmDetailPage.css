@@ -1,0 +1,540 @@
+/* Film Detail Page Styles */
+.film-detail-page {
+    min-height: 100vh;
+    background: #0f0f0f;
+    color: white;
+}
+
+/* Loading Screen */
+.loading-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #0f0f0f;
+    color: white;
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 3px solid #333;
+    border-top: 3px solid #e50914;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 1rem;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Error Screen */
+.error-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #0f0f0f;
+    color: white;
+    text-align: center;
+}
+
+.back-home-btn {
+    padding: 1rem 2rem;
+    background: #e50914;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+/* Hero Section */
+.film-hero {
+    padding: 2rem 0 4rem;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.back-btn {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 2rem;
+    transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.film-hero-content {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 3rem;
+    align-items: start;
+}
+
+ .film-hero-content .film-poster {
+    width: 100%;
+    height: 100% ;
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+.action-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.btn-primary,
+.btn-secondary {
+    width: 100%;
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.btn-primary {
+    background: #e50914;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #b8070f;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.btn-secondary:hover {
+    background: white;
+    color: #0f0f0f;
+}
+
+/* Film Main Info */
+.film-main-info {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+.film-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, #fff 0%, #ccc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.film-meta {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.rating-badge {
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.rating-badge.imdb {
+    background: #f5c518;
+    color: #000;
+}
+
+.rating-badge.user {
+    background: #e50914;
+    color: white;
+}
+
+.duration {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.film-genres {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.genre-tag {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.film-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    color: #ccc;
+}
+
+.film-details-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.detail-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.detail-item .label {
+    color: #888;
+    font-size: 0.9rem;
+}
+
+.detail-item .value {
+    font-weight: 600;
+}
+
+.age-restriction {
+    color: #4CAF50 !important;
+    font-weight: 600;
+}
+
+/* Tabs Section */
+.film-tabs-section {
+    padding: 3rem 0;
+    background: #1a1a1a;
+}
+
+.tabs-navigation {
+    display: flex;
+    gap: 0;
+    border-bottom: 1px solid #333;
+    margin-bottom: 2rem;
+}
+
+.tab-btn {
+    background: none;
+    border: none;
+    color: #888;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.tab-btn.active {
+    color: white;
+    border-bottom-color: #e50914;
+}
+
+.tab-btn:hover {
+    color: white;
+}
+
+/* Tab Content */
+.tab-content {
+    min-height: 400px;
+}
+
+/* Info Tab */
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.info-card,
+.story-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.info-card h3,
+.story-card h3 {
+    margin-bottom: 1.5rem;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.info-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.info-item {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0.8rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.info-item strong {
+    color: #ccc;
+}
+
+.story-text {
+    line-height: 1.6;
+    color: #ccc;
+}
+
+/* Cast Tab */
+.cast-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1.5rem;
+}
+
+.cast-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.cast-card:hover {
+    transform: translateY(-5px);
+}
+
+.actor-photo {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+}
+
+.actor-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.actor-info {
+    padding: 1rem;
+}
+
+.actor-name {
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+    font-size: 0.9rem;
+}
+
+.actor-role {
+    color: #888;
+    font-size: 0.8rem;
+}
+
+/* Showtimes Tab */
+.showtimes-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.cinema-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.cinema-card h4 {
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.time-slots {
+    display: flex;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+}
+
+.time-slot {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 0.8rem 1.2rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.time-slot:hover {
+    background: #e50914;
+    border-color: #e50914;
+}
+
+/* Reviews Tab */
+.reviews-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.review-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1.5rem;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 1rem;
+}
+
+.reviewer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.rating {
+    font-size: 0.9rem;
+}
+
+.review-date {
+    color: #888;
+    font-size: 0.9rem;
+}
+
+.review-text {
+    line-height: 1.5;
+    color: #ccc;
+}
+
+/* Floating Action Button */
+.floating-action {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 1000;
+}
+
+.fab-book {
+    background: #e50914;
+    color: white;
+    border: none;
+    padding: 1.2rem 2rem;
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 10px 30px rgba(229, 9, 20, 0.3);
+    transition: all 0.3s ease;
+}
+
+.fab-book:hover {
+    background: #b8070f;
+    transform: scale(1.05);
+    box-shadow: 0 15px 40px rgba(229, 9, 20, 0.4);
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+    .film-hero-content {
+        grid-template-columns: 250px 1fr;
+        gap: 2rem;
+    }
+
+    .film-title {
+        font-size: 2.2rem;
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .film-hero-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .film-poster {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .action-buttons {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .film-title {
+        font-size: 1.8rem;
+    }
+
+    .tabs-navigation {
+        flex-wrap: wrap;
+    }
+
+    .tab-btn {
+        flex: 1;
+        min-width: 120px;
+    }
+
+    .cast-grid {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    }
+
+    .floating-action {
+        bottom: 1rem;
+        right: 1rem;
+    }
+
+    .fab-book {
+        padding: 1rem 1.5rem;
+        font-size: 0.9rem;
+    }
+}
