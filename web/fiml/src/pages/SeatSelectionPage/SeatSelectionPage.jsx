@@ -45,40 +45,77 @@ const SeatSelectionPage = () => {
     fetchData();
   }, [filmId, showtimeId]);
 
-  const seatLayout = useMemo(() => {
-    const rows = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'];
-    const seats = [];
+  // const seatLayout = useMemo(() => {
+  //   const rows = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'];
+  //   const seats = [];
     
-    rows.forEach(row => {
-      for (let number = 1; number <= 12; number++) {
-        const seatId = `${row}${number}`;
-        const isBooked = bookedSeats.includes(seatId);
+  //   rows.forEach(row => {
+  //     for (let number = 1; number <= 12; number++) {
+  //       const seatId = `${row}${number}`;
+  //       const isBooked = bookedSeats.includes(seatId);
         
-        let type = 'standard';
-        let price = 65000;
+  //       let type = 'standard';
+  //       let price = 65000;
         
-        if (row === 'A' || row === 'B') {
-          type = 'vip';
-          price = 85000;
-        } else if (row === 'G' || row === 'H') {
-          type = 'couple';
-          price = 120000;
-        }
+  //       if (row === 'A' || row === 'B') {
+  //         type = 'vip';
+  //         price = 85000;
+  //       } else if (row === 'G' || row === 'H') {
+  //         type = 'couple';
+  //         price = 120000;
+  //       }
         
-        seats.push({
-          id: seatId,
-          row,
-          number,
-          isBooked,
-          type,
-          price
-        });
-      }
-    });
+  //       seats.push({
+  //         id: seatId,
+  //         row,
+  //         number,
+  //         isBooked,
+  //         type,
+  //         price
+  //       });
+  //     }
+  //   });
     
-    return seats;
-  }, [bookedSeats]);
+  //   return seats;
+  // }, [bookedSeats]);
 
+  const seatLayout = useMemo(() => {
+  const rows = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'];
+  const seats = [];
+  
+  // Lấy giá cơ bản từ showtime
+  const basePrice = showtime?.price || 65000;
+  
+  rows.forEach(row => {
+    for (let number = 1; number <= 12; number++) {
+      const seatId = `${row}${number}`;
+      const isBooked = bookedSeats.includes(seatId);
+      
+      let type = 'standard';
+      let price = basePrice; // Dùng giá từ showtime
+      
+      // Tính hệ số nhân cho từng loại ghế
+      if (row === 'A' || row === 'B') {
+        type = 'vip';
+        price = Math.round(basePrice * 1.3); // VIP giá cao hơn 30%
+      } else if (row === 'G' || row === 'H') {
+        type = 'couple';
+        price = Math.round(basePrice * 1.8); // Ghế đôi giá cao hơn 80%
+      }
+      
+      seats.push({
+        id: seatId,
+        row,
+        number,
+        isBooked,
+        type,
+        price
+      });
+    }
+  });
+  
+  return seats;
+}, [bookedSeats, showtime]); // Thêm showtime vào dependency
   const handleSeatClick = (seat) => {
     if (seat.isBooked) return;
     

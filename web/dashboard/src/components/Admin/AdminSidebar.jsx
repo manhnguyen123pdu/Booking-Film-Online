@@ -9,6 +9,7 @@ const AdminSidebar = () => {
     { path: '/admin/showtime', icon: '👥', label: 'Xuất chiếu' },
     { path: '/admin/bookings', icon: '🎫', label: 'Đơn đặt vé' },
     { path: '/admin/users', icon: '👥', label: 'Người dùng' },
+    { path: '/admin/roomManagement', icon: '👥', label: 'RoomManagement' },
   ]
 
   return (

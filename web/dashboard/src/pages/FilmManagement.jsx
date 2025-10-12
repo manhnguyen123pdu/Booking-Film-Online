@@ -102,18 +102,19 @@ const FilmManagement = () => {
     setShowModal(true)
   }
 
-  const handleDeleteFilm = async (filmId) => {
-    if (window.confirm('Bạn có chắc chắn muốn xóa phim này?')) {
-      try {
-        // Gọi API xóa phim
-        console.log('Deleting film:', filmId)
-        // await dashboardAPI.deleteFilm(filmId)
-        fetchFilms() // Refresh list
-      } catch (error) {
-        console.error('Error deleting film:', error)
-      }
+const handleDeleteFilm = async (filmId) => {
+  if (window.confirm('Bạn có chắc chắn muốn xóa phim này?')) {
+    try {
+      console.log('Deleting film:', filmId)
+      await dashboardAPI.deleteFilm(filmId) // ✅ BẬT API XÓA
+      fetchFilms() // Refresh list
+      alert('Xóa phim thành công!')
+    } catch (error) {
+      console.error('Error deleting film:', error)
+      alert('Có lỗi xảy ra khi xóa phim!')
     }
   }
+}
 
   const toggleFilmStatus = async (filmId, currentStatus) => {
     try {
@@ -155,50 +156,50 @@ const FilmManagement = () => {
       }
     }))
   }
+
 const handleSubmit = async (e) => {
   e.preventDefault()
   try {
-    // TẠO DATA THEO ĐÚNG FORMAT TRONG DB.JSON
+    // TẠO DATA THEO ĐÚNG FORMAT
     const filmData = {
-      id: `film_${Math.random().toString(36).substr(2, 18)}`,
+      id: selectedFilm ? selectedFilm.id : `film_${Math.random().toString(36).substr(2, 18)}`, // ✅ Giữ nguyên ID khi update
       nameFilm: formData.nameFilm,
-      videoTrailer: formData.trailer, // Đổi trailer -> videoTrailer
-      release: "5/4", // Hoặc lấy từ form
+      videoTrailer: formData.trailer,
+      release: "5/4",
       img: formData.img,
-      subImg: [""], // Thêm subImg
+      subImg: [""],
       ratedView: {
         imdb: formData.ratedView.imdb,
         user: formData.ratedView.user
       },
       infoFilm: {
-        rating: formData.infoFilm.rated, // Đổi rated -> rating
-        releaseDate: formData.infoFilm.premiere, // Đổi premiere -> releaseDate
-        status: formData.status === 'showing', // Đổi status sang boolean
-        cast: [], // Thêm cast array
+        rating: formData.infoFilm.rated,
+        releaseDate: formData.infoFilm.premiere,
+        status: formData.status === 'showing',
+        cast: formData.infoFilm.cast, // ✅ Giữ nguyên cast từ form
         director: formData.infoFilm.director,
-        story: formData.description, // Đổi description -> story
-        country: "Âu Mỹ", // Thêm country
-        time: `${formData.infoFilm.duration} phút`, // Đổi duration -> time
+        story: formData.description,
+        country: "Âu Mỹ",
+        time: `${formData.infoFilm.duration} phút`,
         category: formData.infoFilm.category
       }
     }
 
     if (selectedFilm) {
-      // Cập nhật phim
+      // Cập nhật phim - BẬT API
       console.log('Updating film:', selectedFilm.id, filmData)
-      // await dashboardAPI.updateFilm(selectedFilm.id, filmData)
+      await dashboardAPI.updateFilm(selectedFilm.id, filmData) // ✅ BẬT API
     } else {
       // THÊM PHIM MỚI
       console.log('Adding new film:', filmData)
       await dashboardAPI.addFilm(filmData)
     }
     setShowModal(false)
-    fetchFilms() // Refresh list
+    fetchFilms()
   } catch (error) {
     console.error('Error saving film:', error)
   }
 }
-
   const formatDate = (dateString) => {
     return new Date(dateString).toLocaleDateString('vi-VN')
   }

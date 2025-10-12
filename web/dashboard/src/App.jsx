@@ -10,6 +10,7 @@ import BookingManagement from './pages/BookingManagement'
 import ShowtimeManagement from './pages/ShowtimeManagement'
 import ProtectedRoute from './components/ProtectedRoute'
 import AdminLayout from './layouts/AdminLayout'
+import RoomManagement from './pages/RoomManagement'
 import './App.css'
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
               <Route path="users" element={<UserManagement />} />
               <Route path="bookings" element={<BookingManagement />} />
               <Route path="showtime" element={<ShowtimeManagement />} />
+              <Route path="roomManagement" element={<RoomManagement />} />
               <Route path="" element={<Navigate to="/admin/dashboard" replace />} />
 
             </Route>

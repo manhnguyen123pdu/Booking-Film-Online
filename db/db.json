@@ -288,17 +288,17 @@
       "totalSeats": 120
     },
     {
-      "id": "showtime_film_s99tv72whcc_20251014_2158",
       "filmId": "film_s99tv72whcc",
       "cinemaId": "cinema_default",
-      "roomId": "room_1",
-      "datetime": "2025-10-14T21:58:00Z",
+      "roomId": "room_2",
+      "datetime": "2025-10-14T04:58:00Z",
       "price": 120000,
       "discount": 0,
       "format": "2D",
       "language": "Phụ đề Việt",
       "availableSeats": 120,
-      "totalSeats": 120
+      "totalSeats": 120,
+      "id": "showtime_film_s99tv72whcc_20251014_2158"
     }
   ],
   "cinemas": [
@@ -358,62 +358,6 @@
   ],
   "bookings": [
     {
-      "id": "43e2",
-      "showtimeId": "showtime_film_s99tv72whcc_20251025_1157",
-      "filmId": "film_s99tv72whcc",
-      "filmName": "CHỊ NGÃ EM NÂNG",
-      "cinemaId": "cinema_default",
-      "roomId": "room_1",
-      "datetime": "2025-10-25T11:57:00Z",
-      "seats": [
-        "A1",
-        "A2",
-        "A3",
-        "A4",
-        "A5"
-      ],
-      "totalAmount": 425000,
-      "status": "confirmed",
-      "customerInfo": {
-        "fullName": "Nguyễn Văn Minh",
-        "email": "user@example.com",
-        "phone": "0123456789",
-        "paymentMethod": "cash",
-        "userId": "user_1"
-      },
-      "userId": "user_1",
-      "paymentMethod": "cash",
-      "paymentStatus": "paid",
-      "createdAt": "2025-10-12T15:09:00.980Z"
-    },
-    {
-      "id": "d103",
-      "showtimeId": "showtime_film_s99tv72whcc_20251025_1157",
-      "filmId": "film_s99tv72whcc",
-      "filmName": "CHỊ NGÃ EM NÂNG",
-      "cinemaId": "cinema_default",
-      "roomId": "room_1",
-      "datetime": "2025-10-25T11:57:00Z",
-      "seats": [
-        "G5",
-        "G11",
-        "G10"
-      ],
-      "totalAmount": 360000,
-      "status": "confirmed",
-      "customerInfo": {
-        "fullName": "Nguyễn Văn Minh",
-        "email": "user@example.com",
-        "phone": "0123456789",
-        "paymentMethod": "zalopay",
-        "userId": "user_1"
-      },
-      "userId": "user_1",
-      "paymentMethod": "zalopay",
-      "paymentStatus": "paid",
-      "createdAt": "2025-10-12T15:09:33.670Z"
-    },
-    {
       "id": "2d5f",
       "showtimeId": "showtime_film_6GKrddfeZRGdgzG5v6Jt_20250805_0649",
       "filmId": "film_6GKrddfeZRGdgzG5v6Jt",
@@ -426,7 +370,7 @@
         "E9"
       ],
       "totalAmount": 130000,
-      "status": "confirmed",
+      "status": "completed",
       "customerInfo": {
         "fullName": "Nguyễn Văn Minh",
         "email": "user@example.com",
@@ -438,42 +382,94 @@
       "paymentMethod": "momo",
       "paymentStatus": "paid",
       "createdAt": "2025-10-12T15:09:47.688Z"
+    },
+    {
+      "id": "5e74",
+      "showtimeId": "showtime_film_s99tv72whcc_20251025_1157",
+      "filmId": "film_s99tv72whcc",
+      "filmName": "CHỊ NGÃ EM NÂNG",
+      "cinemaId": "cinema_default",
+      "roomId": "room_1",
+      "datetime": "2025-10-25T11:57:00Z",
+      "seats": [
+        "H11"
+      ],
+      "totalAmount": 126000,
+      "status": "confirmed",
+      "customerInfo": {
+        "fullName": "Nguyễn Văn Trung",
+        "email": "user@example.com",
+        "phone": "0123456789",
+        "paymentMethod": "momo",
+        "userId": "user_1"
+      },
+      "userId": "user_1",
+      "paymentMethod": "momo",
+      "paymentStatus": "paid",
+      "createdAt": "2025-10-12T16:13:28.801Z"
+    },
+    {
+      "id": "317d",
+      "showtimeId": "showtime_MD15_20240813_1500",
+      "filmId": "film_LRF2Bi2kqZET8JXXM02X",
+      "filmName": "BIỆT ĐỘI SĂN RỒNG",
+      "cinemaId": "cinema_default",
+      "roomId": "room_4",
+      "datetime": "2024-08-13T15:00:00Z",
+      "seats": [
+        "E6",
+        "F8"
+      ],
+      "totalAmount": 130000,
+      "status": "confirmed",
+      "customerInfo": {
+        "fullName": "Nguyễn Văn Trung",
+        "email": "user@example.com",
+        "phone": "0123456789",
+        "paymentMethod": "momo",
+        "userId": "user_1"
+      },
+      "userId": "user_1",
+      "paymentMethod": "momo",
+      "paymentStatus": "paid",
+      "createdAt": "2025-10-12T17:19:57.235Z"
     }
   ],
   "users": [
     {
       "id": "user_1",
-      "fullName": "Nguyễn Văn A",
+      "fullName": "Nguyễn Văn Trung",
       "email": "user@example.com",
       "password": "123456",
       "phone": "0123456789",
-      "createdAt": "2024-01-01T00:00:00Z"
+      "createdAt": "2024-01-01T00:00:00Z",
+      "dateOfBirth": "",
+      "gender": "",
+      "status": "active"
     },
     {
-      "id": "user_2",
       "fullName": "Trần Thị B",
       "email": "user2@example.com",
-      "password": "123456",
       "phone": "0987654321",
-      "createdAt": "2024-01-02T00:00:00Z"
+      "role": "admin",
+      "status": "active",
+      "id": "user_2"
     },
     {
-      "id": "user_3",
-      "fullName": "Lê Văn C",
+      "fullName": "Lê Văn Trung",
       "email": "user3@example.com",
-      "password": "123456",
       "phone": "0369852147",
-      "createdAt": "2024-01-03T00:00:00Z"
+      "role": "admin",
+      "status": "active",
+      "id": "user_3"
     },
     {
-      "id": "1760282647393",
       "fullName": "Bradley May",
       "email": "use3r@example.com",
       "phone": "0123456789",
-      "password": "123456",
-      "dateOfBirth": "",
-      "gender": "",
-      "createdAt": "2025-10-12T15:24:07.393Z"
+      "role": "user",
+      "status": "active",
+      "id": "1760282647393"
     }
   ]
 }
