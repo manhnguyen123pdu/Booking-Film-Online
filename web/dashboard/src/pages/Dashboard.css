@@ -177,7 +177,7 @@
 }
 
 .stat-value {
-  font-size: 2.5rem;
+  font-size: 25px;
   font-weight: 800;
   color: #ffffff;
   margin-bottom: 0.5rem;
@@ -195,13 +195,13 @@
 }
 
 /* Content Grid */
-.content-grid {
+/* .content-grid {
   display: grid;
   grid-template-columns: 1.5fr 1fr;
   gap: 2.5rem;
   position: relative;
-  z-index: 2;
-}
+  z-index: 2; */
+/* } */
 
 .content-card {
   background: rgba(255, 255, 255, 0.05);
