@@ -44,7 +44,6 @@ const RoomManagement = () => {
       const bookedSeats = roomBookings.reduce((seats, booking) => [...seats, ...booking.seats], []);
       const rows = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'];
       const seatLayout = [];
-console.log(bookedSeats)
       rows.forEach(row => {
         for (let number = 1; number <= 12; number++) {
           const seatId = `${row}${number}`;
@@ -68,6 +67,7 @@ console.log(bookedSeats)
           statistics: {
             totalSeats,
             bookedSeats: bookedSeatsCount,
+            booked: bookedSeats,
             availableSeats,
             occupancyRate: Math.round(occupancyRate)
           }
@@ -204,24 +204,27 @@ console.log(bookedSeats)
                 <div className="rm-screen-label">MÀN HÌNH</div>
                 <div className="rm-screen"></div>
               </div>
-
               <div className="rm-seat-grid">
-                {roomStatus[selectedShowtime.id].seatLayout.map(seat => (
-                  <div
+                {roomStatus[selectedShowtime.id].seatLayout.map(seat => { console.log(roomStatus[selectedShowtime.id].statistics.booked, seat.id)
+                  let isBooked=roomStatus[selectedShowtime.id].statistics.booked.some(num => num === seat.id)
+                  return <div
                     key={seat.id}
-                    className={`rm-seat rm-${seat.type} ${seat.isBooked ? 'rm-booked' : 'rm-available'}`}
+                    className={`rm-seat rm-${seat.type} ${isBooked ? 'rm-booked' : 'rm-available'}`}
                     title={`${seat.id} - ${seat.type === 'vip' ? 'VIP' : seat.type === 'couple' ? 'Đôi' : 'Thường'} - ${seat.isBooked ? 'Đã đặt' : 'Còn trống'}`}
                   >
                     <span className="rm-seat-number">{seat.number}</span>
+                    {/* Tooltip khi hover */}
+                    <div className="rm-seat-tooltip">
+                      {seat.id} - {seat.type === 'vip' ? 'VIP' : seat.type === 'couple' ? 'Đôi' : 'Thường'}
+                    </div>
                   </div>
-                ))}
+                })}
               </div>
-
               {/* Legend */}
               <div className="rm-legend">
                 <div className="rm-legend-item">
                   <div className="rm-example rm-available"></div>
-                  <span>Ghế trống</span>
+                  <span>Ghế thường</span>
                 </div>
                 <div className="rm-legend-item">
                   <div className="rm-example rm-booked"></div>
