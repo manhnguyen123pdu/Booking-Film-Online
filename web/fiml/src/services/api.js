@@ -1,30 +1,5 @@
-// const API_BASE = 'http://localhost:3001';
 
-// export const filmAPI = {
-//   // Films
-//   getFilms: () => fetch(`${API_BASE}/films`).then(res => res.json()),
-//   getFilmById: (id) => fetch(`${API_BASE}/films/${id}`).then(res => res.json()),
-
-//   // Showtimes
-//   getShowtimes: () => fetch(`${API_BASE}/showtimes`).then(res => res.json()),
-//   getShowtimesByFilm: (filmId) => 
-//     fetch(`${API_BASE}/showtimes?filmId=${filmId}`).then(res => res.json()),
-
-//   // Bookings - QUAN TRỌNG
-//   getBookings: () => fetch(`${API_BASE}/bookings`).then(res => res.json()),
-//   getBookingsByShowtime: (showtimeId) => 
-//     fetch(`${API_BASE}/bookings?showtimeId=${showtimeId}`).then(res => res.json()),
-
-//   createBooking: (bookingData) => 
-//     fetch(`${API_BASE}/bookings`, {
-//       method: 'POST',
-//       headers: { 'Content-Type': 'application/json' },
-//       body: JSON.stringify(bookingData),
-//     }).then(res => res.json()),
-// };
-
-
-const API_BASE = 'http://localhost:3001';
+const API_BASE = 'https://1i5z0-8080.csb.app/';
 
 export const filmAPI = {
   // Films

@@ -7,6 +7,6 @@ export const store = configureStore({
   reducer: {
     films: filmsReducer,
     booking: bookingReducer,
- auth: authReducer,
+    auth: authReducer,
   },
 });

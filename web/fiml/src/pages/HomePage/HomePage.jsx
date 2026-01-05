@@ -19,7 +19,7 @@ const HomePage = () => {
     dispatch(fetchFilms());
   }, [dispatch]);
 
-  // Handle scroll for sticky header
+
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);

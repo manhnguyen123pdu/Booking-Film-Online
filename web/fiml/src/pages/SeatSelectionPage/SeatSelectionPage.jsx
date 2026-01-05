@@ -45,40 +45,6 @@ const SeatSelectionPage = () => {
     fetchData();
   }, [filmId, showtimeId]);
 
-  // const seatLayout = useMemo(() => {
-  //   const rows = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'];
-  //   const seats = [];
-    
-  //   rows.forEach(row => {
-  //     for (let number = 1; number <= 12; number++) {
-  //       const seatId = `${row}${number}`;
-  //       const isBooked = bookedSeats.includes(seatId);
-        
-  //       let type = 'standard';
-  //       let price = 65000;
-        
-  //       if (row === 'A' || row === 'B') {
-  //         type = 'vip';
-  //         price = 85000;
-  //       } else if (row === 'G' || row === 'H') {
-  //         type = 'couple';
-  //         price = 120000;
-  //       }
-        
-  //       seats.push({
-  //         id: seatId,
-  //         row,
-  //         number,
-  //         isBooked,
-  //         type,
-  //         price
-  //       });
-  //     }
-  //   });
-    
-  //   return seats;
-  // }, [bookedSeats]);
-
   const seatLayout = useMemo(() => {
   const rows = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H'];
   const seats = [];

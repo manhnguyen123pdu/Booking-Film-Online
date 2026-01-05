@@ -72,7 +72,7 @@ const RegisterPage = () => {
 
     try {
       // Kiểm tra email đã tồn tại chưa
-      const usersResponse = await fetch('http://localhost:3001/users');
+      const usersResponse = await fetch('https://1i5z0-8080.csb.app/users');
       const users = await usersResponse.json();
       
       const existingUser = users.find(u => u.email === formData.email);
@@ -93,7 +93,7 @@ const RegisterPage = () => {
         createdAt: new Date().toISOString()
       };
 
-      const response = await fetch('http://localhost:3001/users', {
+      const response = await fetch('https://1i5z0-8080.csb.app/users', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
